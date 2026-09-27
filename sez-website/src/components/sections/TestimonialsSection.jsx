@@ -1,4 +1,3 @@
-import { testimonials } from '../../data/testimonials';
 import { testimonials as staticTestimonials } from '../../data/testimonials';
 import { useSanityFetch } from '../../hooks/useSanityFetch';
 import { TESTIMONIALS_QUERY } from '../../lib/sanityQueries';

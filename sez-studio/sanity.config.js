@@ -11,7 +11,7 @@ export default defineConfig({
   // 👉 IMPORTANT: Replace these values with your own
   //    after creating a free account at https://sanity.io
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  projectId: 'your-project-id',   // ← Paste Project ID here
+  projectId: 'hcgkbm9a',   // ← Paste Project ID here
   dataset: 'production',
 
   plugins: [

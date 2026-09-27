@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { faqItems } from '../../data/faq';
 import { faqItems as staticFaqItems } from '../../data/faq';
 import { useSanityFetch } from '../../hooks/useSanityFetch';
 import { FAQS_QUERY } from '../../lib/sanityQueries';

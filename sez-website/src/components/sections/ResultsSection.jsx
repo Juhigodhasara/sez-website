@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { toppers, resultFilters } from '../../data/toppers';
 import { toppers as staticToppers, resultFilters } from '../../data/toppers';
 import { useScrollTo } from '../../hooks/useScrollTo';
 import { useSanityFetch } from '../../hooks/useSanityFetch';

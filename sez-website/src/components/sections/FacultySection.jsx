@@ -1,4 +1,3 @@
-import { faculty } from '../../data/faculty';
 import { faculty as staticFaculty } from '../../data/faculty';
 import { useSanityFetch } from '../../hooks/useSanityFetch';
 import { FACULTY_QUERY } from '../../lib/sanityQueries';

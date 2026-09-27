@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { courses, courseFilters } from '../../data/courses';
 import { courses as staticCourses, courseFilters } from '../../data/courses';
 import { useScrollTo } from '../../hooks/useScrollTo';
 import { useSanityFetch } from '../../hooks/useSanityFetch';
