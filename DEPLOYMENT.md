@@ -63,3 +63,4 @@ For security reasons, your live website will be blocked from fetching data until
 4. Refresh the Vercel website — your change should appear instantly!
 
 *(Note: If you ever want to connect a custom domain like `sez.edu.in`, you can do so in the Vercel Project Settings under "Domains").*
+
