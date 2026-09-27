@@ -1,0 +1,1332 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "primary-fixed": "#d2e4ff",
+        "on-tertiary-fixed": "#2a1700",
+        "primary": "#000917",
+        "background": "#f8f9ff",
+        "surface-container-highest": "#d3e4fe",
+        "on-primary-fixed-variant": "#364860",
+        "on-surface-variant": "#44474d",
+        "on-tertiary-container": "#bd7800",
+        "outline-variant": "#c4c6cd",
+        "surface-bright": "#f8f9ff",
+        "surface-tint": "#4d6079",
+        "inverse-primary": "#b5c8e5",
+        "tertiary-container": "#301b00",
+        "inverse-on-surface": "#eaf1ff",
+        "on-secondary-container": "#fefcff",
+        "on-background": "#0b1c30",
+        "tertiary-fixed-dim": "#ffb95f",
+        "on-primary-container": "#7689a4",
+        "on-tertiary-fixed-variant": "#653e00",
+        "tertiary": "#100600",
+        "surface": "#f8f9ff",
+        "on-error-container": "#93000a",
+        "on-secondary": "#ffffff",
+        "secondary": "#0051d5",
+        "on-secondary-fixed-variant": "#003ea8",
+        "on-primary": "#ffffff",
+        "inverse-surface": "#213145",
+        "surface-container": "#e5eeff",
+        "surface-container-lowest": "#ffffff",
+        "surface-container-high": "#dce9ff",
+        "tertiary-fixed": "#ffddb8",
+        "primary-fixed-dim": "#b5c8e5",
+        "on-tertiary": "#ffffff",
+        "secondary-fixed": "#dbe1ff",
+        "primary-container": "#0d2137",
+        "surface-dim": "#cbdbf5",
+        "surface-variant": "#d3e4fe",
+        "error": "#ba1a1a",
+        "on-secondary-fixed": "#00174b",
+        "on-surface": "#0b1c30",
+        "on-error": "#ffffff",
+        "surface-container-low": "#eff4ff",
+        "secondary-fixed-dim": "#b4c5ff",
+        "outline": "#74777d",
+        "error-container": "#ffdad6",
+        "on-primary-fixed": "#081c32",
+        "secondary-container": "#316bf3"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "gutter": "1.5rem",
+        "space-md": "1rem",
+        "margin": "3rem",
+        "space-sm": "0.5rem",
+        "margin-mobile": "1.25rem",
+        "space-lg": "1.5rem",
+        "gutter-mobile": "1rem",
+        "space-xl": "2.5rem",
+        "space-xs": "0.25rem"
+      },
+      "fontFamily": {
+        "headline-sm": ["Plus Jakarta Sans"],
+        "display-md": ["Plus Jakarta Sans"],
+        "body-lg": ["Inter"],
+        "label-sm": ["Plus Jakarta Sans"],
+        "headline-lg": ["Plus Jakarta Sans"],
+        "label-lg": ["Plus Jakarta Sans"],
+        "display-md-mobile": ["Plus Jakarta Sans"],
+        "display-lg": ["Plus Jakarta Sans"],
+        "label-md": ["Plus Jakarta Sans"],
+        "display-lg-mobile": ["Plus Jakarta Sans"],
+        "body-xl": ["Inter"],
+        "body-md": ["Inter"],
+        "body-sm": ["Inter"],
+        "headline-xl": ["Plus Jakarta Sans"],
+        "headline-md": ["Plus Jakarta Sans"],
+        "headline-xl-mobile": ["Plus Jakarta Sans"]
+      },
+      "fontSize": {
+        "headline-sm": ["18px", {"lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600"}],
+        "display-md": ["44px", {"lineHeight": "52px", "letterSpacing": "-0.025em", "fontWeight": "700"}],
+        "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}],
+        "headline-lg": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700"}],
+        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+        "display-md-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+        "display-lg-mobile": ["38px", {"lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "800"}],
+        "body-xl": ["18px", {"lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400"}],
+        "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}],
+        "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+        "headline-xl": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "headline-md": ["22px", {"lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+        "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700"}]
+      }
+    }
+  }
+}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50"><div class="w-full bg-primary-container text-on-primary font-body-sm text-body-sm py-space-xs px-gutter-mobile lg:px-gutter"><div class="max-w-7xl mx-auto flex items-center justify-between gap-gutter-mobile"><div class="flex items-center gap-space-sm overflow-hidden text-ellipsis whitespace-nowrap"><span class="flex h-2 w-2 rounded-full bg-tertiary-fixed-dim shrink-0"></span><p class="font-label-sm text-label-sm truncate text-inverse-on-surface">Admissions Open 2026–27 | Sahjanand Educational Zone • Batches starting with 1-on-1 Mentorship <span class="bg-surface-container-highest/20 text-tertiary-fixed px-2 py-0.5 rounded ml-1.5 font-bold">We Create Future ®</span></p></div><div class="hidden sm:flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-xs text-inverse-on-surface hover:text-on-secondary transition-colors" href="tel:+919820145678"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">call</span><span class="font-label-md text-label-md">+91 98201 45678</span></a></div></div></div><div class="w-full bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter-mobile lg:px-gutter flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Sahjanand Educational Zone" class="h-11 sm:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBISEfEbMkFnBLjcsUkTqrA7QcJSKbYH8VDyPKfw5Olf4mEMxFKmXPhK2U5MwkQz36_1d-osVd1HEFevu_rpzWDVOcKeVYbq7AVII7jfUg0CnTEdyn9voqW_ZTJHkiSOsHFI8wCOW-8V281C2gMOuFSs-D6BczmSSD2NbLTVj0Svaay_NyY2ZB-g65i0gAsqUoZYp4t8aka41958vL7N2Pqo_Na94Kpor8pDvm0FUhuSFGxVE3dYrfg_eOCDfnIYdLCNWY"></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-secondary font-bold"><a aria-current="page" class="transition-colors text-secondary font-bold" data-path="home" href="#"><img alt="Sahjanand Educational Zone" class="h-11 sm:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBISEfEbMkFnBLjcsUkTqrA7QcJSKbYH8VDyPKfw5Olf4mEMxFKmXPhK2U5MwkQz36_1d-osVd1HEFevu_rpzWDVOcKeVYbq7AVII7jfUg0CnTEdyn9voqW_ZTJHkiSOsHFI8wCOW-8V281C2gMOuFSs-D6BczmSSD2NbLTVj0Svaay_NyY2ZB-g65i0gAsqUoZYp4t8aka41958vL7N2Pqo_Na94Kpor8pDvm0FUhuSFGxVE3dYrfg_eOCDfnIYdLCNWY"></a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><div class="relative group flex items-center gap-space-xs cursor-pointer"><a class="font-label-md text-label-md text-on-surface-variant group-hover:text-on-surface transition-colors" data-path="courses" href="#">Courses</a><span class="material-symbols-outlined text-[16px] text-on-surface-variant group-hover:text-on-surface transition-transform group-hover:rotate-180">expand_more</span></div><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="teaching-method" href="#">Teaching Method</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="results" href="#">Results</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faculty" href="#">Faculty</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="gallery" href="#">Gallery</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviews" href="#">Reviews</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="faqs" href="#">FAQs</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm lg:gap-space-md shrink-0"><a aria-label="WhatsApp Inquiry" class="p-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors flex items-center justify-center" href="https://wa.me/919820145678" rel="noopener" target="_blank"><span class="material-symbols-outlined text-[20px] text-secondary">chat</span></a><a class="hidden sm:inline-flex items-center justify-center px-gutter-mobile py-2.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-sm hover:bg-tertiary-fixed-dim transition-all" data-path="book-free-demo" href="#">Book Free Demo</a><div class="flex items-center pl-space-xs"><img alt="SEZ Emblem" class="w-9 h-9 rounded-full object-contain ring-2 ring-tertiary-fixed bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Yktxxyq3yYaKgG8bn_DE-VyRfCeG6gjoLkOl8R8Hqq2ccMjXMObtgLRD9wyvpvFZg7bXX1yiu-IAhgWPUGFeARCQZmONgfFRi-x9ndT3PkfIexm9_xjry6y9H9eLpQSHzGjM3wntlC9cBw0VTniF9fo6v4YfG7o3S03StDp-vzbHZ3PM3nb1nwtSnHLgeyj3_cSDKqy-ALvcSAntByf8qGdVNZ2Uktn59HVCPgmiXR1myhaF9hu81HeQibh_IK-RFHE"></div></div></div></div></header><main class="w-full pt-28 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-lowest via-surface to-surface-container-low py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-gutter items-center">
+<!-- Left Content -->
+<div class="lg:col-span-6 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-3.5 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-sm">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm tracking-wide uppercase">Admissions Open 2026–27 • Max 15 per Batch</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile lg:text-display-lg text-primary tracking-tight font-extrabold leading-tight">We Create Future: <br class="hidden sm:inline"><span class="text-secondary">Learn Better.</span> <br class="hidden sm:inline">Score Higher.</h1>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-xl">Sahjanand Educational Zone (SEZ) delivers concept-focused, mentor-led coaching designed to unlock student potential across CBSE, ICSE &amp; State Boards from Class 1 to 12.</p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm sm:gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-lg text-label-lg shadow-md hover:bg-tertiary-fixed-dim transition-all group" href="#book-demo">
+<span class="">Book Free Demo Class</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-3.5 rounded-lg bg-surface-container-high text-primary font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" href="#courses">
+<span class="">Explore All Courses</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-md py-3.5 rounded-lg bg-surface-container text-secondary font-label-md text-label-md hover:bg-surface-container-high transition-colors" href="https://wa.me/919820145678" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="">Quick WhatsApp Enquiry</span>
+</a>
+</div>
+<!-- Trust Indicators -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-md w-full">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">verified</span>
+<span class="font-body-sm text-body-sm font-medium">8+ Yrs Avg Faculty</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">groups</span>
+<span class="font-body-sm text-body-sm font-medium">Max 15 Students</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+<span class="font-body-sm text-body-sm font-medium">Weekly Tests</span>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+<span class="font-body-sm text-body-sm font-medium">1:1 Mentorship</span>
+</div>
+</div>
+</div>
+<!-- Right Visual: Classroom with Floating Metrics -->
+<div class="lg:col-span-6 relative mt-space-lg lg:mt-0">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest">
+<img alt="Bright modern Indian coaching classroom at VedaLumen Learning Academy" class="w-full h-[420px] sm:h-[500px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvVomo5rGz3y-5tqLGBYmQ9Fa92zVTO65XMoGpbGvL19OEFGwxsalLMDLaH2wRw6rIHOtz5o0_MprwnPpkDXmWqD4rf-7Wk1i3v8WNQYGUZ4xyBittEr7wgk9CNo9UgH5R1SuSNgLNEQNUs-hylx-aL6ZGiv0C2rpwZPizsQp28p7tBXlqeDqSC-wfsbbm3ntwFzyMsg9cb_Xawt5dCylKzizvYEZKIzF--_xBWdNDiDE-vp6Jp_5N9Q">
+<!-- Gradient Overlay for Contrast -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<!-- Bottom Caption Inside Image -->
+<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-on-primary">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm tracking-wide">Live Interactive Classroom Session</span>
+</div>
+<span class="font-label-sm text-label-sm bg-primary/80 px-2.5 py-1 rounded-md backdrop-blur-sm">Class 10 Board Prep</span>
+</div>
+</div>
+<!-- Floating Badges Layer -->
+<div class="absolute -top-4 -left-3 sm:-left-6 p-space-sm bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-lg flex items-center gap-space-xs sm:gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary"><img alt="SEZ Seal" class="w-7 h-7 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPB8E02CJUONxHL_gsQSNRF9A6PyAJi4mrw23nvj-Ue349bYQlzacdCHx_HNWGK7Lz4izeiy5LGZymj_uPI1Ir9E8Qkhp9E91SdhKlgP0xcHcZLXkVKT2CJcBRkfMOtkipBzQTzBAmsU1_O__Jp4sGYdacFr4Eogof8X57ogLAMQ5hhVcGNz6GcTJG2erhiL2TAmfYIErkxcgIvce__L5HluQoDVbkakTQVEdfM0QkZxlVr88WYAZtOdPNPfQFZfUDAcI"></div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">10+ Years</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Of Academic Excellence</p>
+</div>
+</div>
+<div class="absolute top-12 -right-3 sm:-right-6 p-space-sm bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-lg flex items-center gap-space-xs sm:gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">95%+ Rate</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Score Improvement</p>
+</div>
+</div>
+<div class="absolute -bottom-5 left-6 p-space-sm bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-lg flex items-center gap-space-xs sm:gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">diversity_3</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">1:15 Ratio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Focused Attention</p>
+</div>
+</div>
+<div class="absolute -bottom-4 -right-3 sm:-right-4 p-space-sm bg-surface-container-lowest/95 backdrop-blur-md rounded-xl shadow-lg flex items-center gap-space-xs sm:gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">500+ Top</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Board Rankers</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: TRUST STATISTICS STRIP -->
+<section class="w-full bg-primary-container text-on-primary py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-md lg:gap-gutter">
+<div class="flex flex-col items-center sm:items-start text-center sm:text-left p-space-md rounded-xl bg-primary/40">
+<div class="flex items-baseline gap-1">
+<span class="font-display-md text-display-md-mobile sm:text-display-md font-bold text-tertiary-fixed-dim" data-target="10">10+</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">Years</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-primary font-semibold mt-1">Teaching Pedagogy</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Proven methodology tested across 10 academic cycles.</p>
+</div>
+<div class="flex flex-col items-center sm:items-start text-center sm:text-left p-space-md rounded-xl bg-primary/40">
+<div class="flex items-baseline gap-1">
+<span class="font-display-md text-display-md-mobile sm:text-display-md font-bold text-tertiary-fixed-dim" data-target="500">500+</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">Students</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-primary font-semibold mt-1">90%+ Score Achievers</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Consistently scoring exceptional percentages in Boards.</p>
+</div>
+<div class="flex flex-col items-center sm:items-start text-center sm:text-left p-space-md rounded-xl bg-primary/40">
+<div class="flex items-baseline gap-1">
+<span class="font-display-md text-display-md-mobile sm:text-display-md font-bold text-tertiary-fixed-dim" data-target="50">50+</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">Mentors</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-primary font-semibold mt-1">Subject Specialists</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Alumni of IITs, NITs, and premier state universities.</p>
+</div>
+<div class="flex flex-col items-center sm:items-start text-center sm:text-left p-space-md rounded-xl bg-primary/40">
+<div class="flex items-baseline gap-1">
+<span class="font-display-md text-display-md-mobile sm:text-display-md font-bold text-tertiary-fixed-dim" data-target="1200">1,200+</span>
+<span class="font-headline-sm text-headline-sm text-tertiary-fixed font-bold">Tests</span>
+</div>
+<p class="font-label-lg text-label-lg text-on-primary font-semibold mt-1">Mock Board Exams</p>
+<p class="font-body-sm text-body-sm text-on-primary-container">Structured diagnostics &amp; analytical feedback papers.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ABOUT THE INSTITUTE -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl lg:gap-gutter items-center">
+<!-- Left Column: Image with Overlays -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl overflow-hidden shadow-xl bg-surface-container-high">
+<img alt="Mentor coaching student 1-on-1 at VedaLumen Learning Academy" class="w-full h-[400px] sm:h-[460px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5gwPhqCNf_j0cvlK-LcShZLv1uQ55T7lTD7BCRQW-M9USY4DAaCqqBoRG8Xy7xHOzgcpNq4OwlNlyN2_FGwXFqcIErt0zekGDSLdKceOMwh_hMIYGgCm6J5B0ruoByEt_FEKA-DHGaAVkHif8XwZvSbow6b0RzFxoC8UMyr0MBJl3jpgX2KRNQl66jc3RT6VnIbEGi3UZF88nl9uKadaoVD66rs3RV3LTqIASA_vIzvzW-OhO_VOd6g">
+</div>
+<!-- Floating Badge -->
+<div class="absolute -bottom-6 -right-3 sm:-right-6 bg-surface-container-lowest p-space-md rounded-xl shadow-lg max-w-xs"><div class="flex items-center gap-space-xs text-secondary mb-1"><img alt="SEZ Logo" class="w-6 h-6 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkFx0TxD1R5yFCn_MnV6k2ZSMt9Md_8qrOmiVXbpja6jdSZ9wgl3Uq9_nnt14nleDW-uohOg-Iw8T21v9r8IvfWVUV3DqQOIYlHJ0CvvLPYexa5XObYL6UMH7TM13PqFDJDvwIRtfPgN3OXVFIcdXIStP-OcaBzRKbfUL-kiR5L4jXkBALWl8H6MsKn7kHcHINbY_dDXTgYCMMZuOC4imdYlT3PJ7SFwU1uVDsyZ5jT8M7e9Pl35TJlMNdXMHd4XvTn0E"><span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Est. 2016 • SEZ</span></div><p class="font-headline-sm text-headline-sm text-primary font-bold leading-tight">We Create Future ®</p><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">“Nurturing analytical intuition rather than mechanical memorization.”</p></div>
+</div>
+<!-- Right Column: Story & 6 Value Pillars -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">About Sahjanand Educational Zone</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight leading-tight">
+            More Than Tuition. <br class="hidden sm:inline">
+<span class="text-secondary">A Better Way to Learn.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">At Sahjanand Educational Zone (SEZ), we believe every student can perform at the highest academic echelon when learning becomes clear, structured, and deeply personal. Our holistic framework harmonizes rigorous concept fundamentals, continuous formative assessments, and an empowering mentor-student connection.</p>
+<!-- 6 Pillars in Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div>
+<h3 class="font-headline-sm text-body-lg font-bold text-primary">Concept-Based Teaching</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No rote cramming; we build foundational mental models.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div>
+<h3 class="font-headline-sm text-body-lg font-bold text-primary">Guaranteed Personal Attention</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Max 15 students per batch ensures zero passive listeners.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div>
+<h3 class="font-headline-sm text-body-lg font-bold text-primary">Weekly Diagnostic Reports</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transparent micro-gap analytics delivered directly to parents.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div>
+<h3 class="font-headline-sm text-body-lg font-bold text-primary">Dedicated Doubt Windows</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">60-minute daily 1-on-1 clinic for clearing every hurdle.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div>
+<h3 class="font-headline-sm text-body-lg font-bold text-primary">Exam-Focused Strategy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Past 10-year question banks &amp; timed answer-writing practice.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0">check_circle</span>
+<div>
+<h3 class="font-headline-sm text-body-lg font-bold text-primary">Warm, Stress-Free Vibe</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">An inspiring environment where asking doubts is celebrated.</p>
+</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-bold hover:underline" href="#pedagogy">
+<span class="">Know More About Our Pedagogy</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: COURSES & LEARNING PATHS -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="courses">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<!-- Section Header -->
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-lg">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Academic Programs (Class 1 to 12)</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">
+          Choose Your Learning Path
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Structured academic coaching tailored for every stage of your school career, adhering to CBSE, ICSE, and State Board curricula.
+        </p>
+<!-- Category Filters -->
+<div class="flex flex-wrap justify-center gap-space-xs sm:gap-space-sm mt-space-md" id="course-filter-group">
+<button class="course-filter-btn px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all" data-filter="all" type="button">All Programs</button>
+<button class="course-filter-btn px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" data-filter="primary" type="button">Primary &amp; Middle (1–8)</button>
+<button class="course-filter-btn px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" data-filter="secondary" type="button">Secondary (9–10)</button>
+<button class="course-filter-btn px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all" data-filter="senior" type="button">Senior Secondary (11–12)</button>
+</div>
+</div>
+<!-- Course Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1: Primary (1-5) -->
+<div class="course-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all" data-category="primary">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Class 1 to 5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Batch: 12 Max</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Foundation &amp; Curiosity</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Developing genuine curiosity, mental arithmetic fluency, and strong language phonics to build lifelong learning habits.
+            </p>
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Subjects Covered:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Mathematics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">General Science</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">English Grammar</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">EVS</span>
+</div>
+</div>
+<ul class="space-y-1.5 mb-space-md">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Activity-based math manipulatives
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Creative writing &amp; reading comprehension
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Monthly parent observation meetings
+              </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center hover:bg-secondary-container transition-colors" href="#book-demo">Book Free Trial Class</a>
+</div>
+</div>
+<!-- Card 2: Middle (6-8) -->
+<div class="course-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all" data-category="primary">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Class 6 to 8</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Batch: 15 Max</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Concept Strengthening</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Smooth transition from primary generalities to disciplined scientific investigation and abstract mathematical logic.
+            </p>
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Subjects Covered:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Mathematics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Physics / Chem / Bio Intro</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Social Sciences</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">English</span>
+</div>
+</div>
+<ul class="space-y-1.5 mb-space-md">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> NCERT deep-dive &amp; reference problem solving
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Early Olympiad &amp; NTSE foundation prep
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Fortnightly diagnostic tests
+              </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center hover:bg-secondary-container transition-colors" href="#book-demo">Book Free Trial Class</a>
+</div>
+</div>
+<!-- Card 3: Secondary (9-10) Board Flagship -->
+<div class="course-card relative flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-md hover:shadow-2xl transition-all" data-category="secondary">
+<div class="absolute -top-3 right-6 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+            ★ Most Popular
+          </div>
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Class 9 &amp; 10</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CBSE / ICSE</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Board Examination Mastery</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Rigorous syllabus completion, presentation optimization drills, and exhaustive practice of previous 10-year papers.
+            </p>
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Subjects Covered:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Standard / Basic Math</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Science (Phy/Chem/Bio)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Social Science</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">English Core</span>
+</div>
+</div>
+<ul class="space-y-1.5 mb-space-md">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> 15+ Board Simulation Mock Papers with grading
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Formula handbooks &amp; mind maps provided
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Dedicated daily 1-on-1 doubt clearing clinic
+              </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full py-2.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold text-center hover:bg-tertiary-fixed-dim transition-colors" href="#book-demo">Book Free Trial Class</a>
+</div>
+</div>
+<!-- Card 4: Senior Science (11-12) -->
+<div class="course-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all" data-category="senior">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Class 11 &amp; 12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PCM / PCB</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Senior Science &amp; Entrances</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              In-depth NCERT mastery integrated with competitive entrance question-solving techniques (JEE Main &amp; NEET level).
+            </p>
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Subjects Covered:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Physics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Chemistry</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Mathematics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Biology</span>
+</div>
+</div>
+<ul class="space-y-1.5 mb-space-md">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Derivations &amp; numerical problem solving sets
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Chapter-wise exemplar &amp; PYQ modules
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Personalized revision calendar
+              </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center hover:bg-secondary-container transition-colors" href="#book-demo">Book Free Trial Class</a>
+</div>
+</div>
+<!-- Card 5: Senior Commerce (11-12) -->
+<div class="course-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all" data-category="senior">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Class 11 &amp; 12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Commerce Stream</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Corporate &amp; Financial Acumen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Building conceptual authority in ledger balancing, macroeconomic theory, business case studies, and statistics.
+            </p>
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Subjects Covered:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Accountancy</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Economics</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Business Studies</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Applied Math</span>
+</div>
+</div>
+<ul class="space-y-1.5 mb-space-md">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Real corporate case study evaluations
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Step-by-step balance sheet workshops
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> CUET Commerce alignment modules
+              </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center hover:bg-secondary-container transition-colors" href="#book-demo">Book Free Trial Class</a>
+</div>
+</div>
+<!-- Card 6: Senior Humanities (11-12) -->
+<div class="course-card flex flex-col justify-between p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all" data-category="senior">
+<div>
+<div class="flex items-center justify-between gap-space-sm mb-space-sm">
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Class 11 &amp; 12</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Humanities Stream</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Analyze, Critique &amp; Excel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Nurturing critical essay composition, historical timeline analysis, philosophical argumentation, and political inquiry.
+            </p>
+<div class="my-space-md p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-label-sm text-label-sm uppercase text-on-surface-variant font-bold mb-1">Subjects Covered:</p>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Political Science</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">History</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Psychology</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-body-sm text-body-sm">Sociology</span>
+</div>
+</div>
+<ul class="space-y-1.5 mb-space-md">
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> High-scoring essay writing frameworks
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> Source-based question drills &amp; map work
+              </li>
+<li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">check</span> CUET &amp; Law Entrance foundation support
+              </li>
+</ul>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<a class="w-full py-2.5 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold text-center hover:bg-secondary-container transition-colors" href="#book-demo">Book Free Trial Class</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: WHY PARENTS TRUST US (6 Feature Blocks) -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">The VedaLumen Advantage</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">Why Parents Trust Sahjanand Educational Zone</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          An uncompromised institutional commitment to academic discipline, individual transparency, and measurable score progression.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- 01 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-md text-display-md text-surface-container-highest font-extrabold">01</span>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Strictly Small Batches</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              With a hard ceiling of 15 students per batch, back-bench passivity is structurally eliminated. Every child is invited into every classroom dialogue.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Average Ratio 1:12</span>
+</div>
+</div>
+<!-- 02 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-md text-display-md text-surface-container-highest font-extrabold">02</span>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">award_star</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Expert Subject Mentors</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Seasoned post-graduates and Ph.D. scholars with minimum 8 years of pedagogical standing who know how to deconstruct difficult abstractions.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">100% Full-Time Faculty</span>
+</div>
+</div>
+<!-- 03 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-md text-display-md text-surface-container-highest font-extrabold">03</span>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">analytics</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Weekly Performance Analytics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Weekly diagnostic assessments paired with topic-wise gap breakdowns sent straight to parents via WhatsApp and our student portal.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Real-time Parent Visibility</span>
+</div>
+</div>
+<!-- 04 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-md text-display-md text-surface-container-highest font-extrabold">04</span>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">help_center</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Daily 1-on-1 Doubt Windows</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              A 60-minute daily dedicated doubt clinic where shy students receive reassuring individual walk-throughs without judgment or time pressure.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Zero Doubts Left Overnight</span>
+</div>
+</div>
+<!-- 05 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-md text-display-md text-surface-container-highest font-extrabold">05</span>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">psychology_alt</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Tailored Mentorship Cards</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Every pupil receives a customized remediation sheet targeting their exact weak spots, whether formula application or answer presentation.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Personalized Growth Trajectory</span>
+</div>
+</div>
+<!-- 06 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-display-md text-display-md text-surface-container-highest font-extrabold">06</span>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">self_improvement</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold">Exam Mindset &amp; Temperament</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Time-pressure simulations, handwriting and step-marking optimization clinics, and proactive stress-reduction guidance before finals.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Calm, Confident Examination</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: OUR 4-STEP TEACHING METHODOLOGY -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="pedagogy">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Our Scientific Pedagogy</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">
+          From Confusion to Confidence in 4 Steps
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          How our disciplined circular feedback loop transforms anxious students into autonomous problem solvers.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md relative">
+<!-- Step 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative z-10">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Step 01</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">lightbulb</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Understand</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Build crystal-clear fundamental mental models using real-world physical analogues and interactive smartboard visual models.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span class="">Zero Rote Cramming</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative z-10">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Step 02</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">draw</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Practice</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Tackle tiered practice sheets starting from NCERT fundamentals, stepping gradually to Board &amp; Olympiad difficulty.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span class="">Graded Difficulty Worksheets</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative z-10">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Step 03</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">speed</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Evaluate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Uncover exact micro-gaps through timed weekly chapter tests, subjective paper assessments, and comparative analytics.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span class="">Comprehensive Analytics</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative z-10">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Step 04</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]">trending_up</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold">Master &amp; Excel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Targeted remedial 1-on-1 sessions, doubt clinics, and repeat challenge problem sets until 100% conceptual mastery is locked.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container flex items-center gap-space-xs text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span class="">Consistent 90%+ Outcome</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: RESULTS & TOPPERS WALL -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-lg">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Proven Track Record</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">
+          Hard Work Deserves to Be Celebrated
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">In Board Exams 2025, 89% of Sahjanand Educational Zone students scored above 90%, with 4 city rank holders across Science &amp; Commerce.</p>
+<!-- Result Filters -->
+<div class="flex flex-wrap justify-center gap-space-xs sm:gap-space-sm mt-space-md" id="results-filter-group">
+<button class="result-filter-btn px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm" data-result-filter="all" type="button">All Scorers</button>
+<button class="result-filter-btn px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container" data-result-filter="class10" type="button">Class 10 CBSE/ICSE</button>
+<button class="result-filter-btn px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container" data-result-filter="class12sci" type="button">Class 12 Science</button>
+<button class="result-filter-btn px-4 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-container" data-result-filter="class12comm" type="button">Class 12 Commerce</button>
+</div>
+</div>
+<!-- Toppers Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Topper 1 -->
+<div class="topper-card p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center" data-result-type="class10">
+<div class="relative mb-space-sm">
+<img alt="Aditi Sharma - 98.2% CBSE Class 10 Topper" class="w-24 h-24 rounded-full object-cover ring-4 ring-tertiary-fixed shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQaleYHYNKjX9DeWVoy_QfjHKavObBMBPhdOJ7H7TqTYXqDEQMFPaaTFnbBzVhJhHKbJLDTOYvY3NLgZr_a-gFBtBpAUbT7KJ-6aas-WSPjrm_IMU07jHQTl2w2UEv6o-woQLdjmhL8Tcj9GCAW8_ktz3LPeWBMN1CDPjZt1KhYoVskREAe6gXp0zw5h1Nc12rGWDH5T5jwDYvSZWzlDvuipKg1Jp9O4rxZIGPx_b7SEKwknTuo9uwTQ">
+<span class="absolute -bottom-2 right-0 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-extrabold shadow-sm">AIR 14</span>
+</div>
+<p class="font-display-md text-display-md-mobile text-secondary font-extrabold">98.2%</p>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Aditi Sharma</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">CBSE Class 10 Board 2025</p>
+<p class="font-body-sm text-body-sm text-secondary font-bold mt-1">100 in Maths &amp; Science</p>
+<p class="font-label-sm text-label-sm text-outline mt-2">Delhi Public School, R.K. Puram</p>
+</div>
+<!-- Topper 2 -->
+<div class="topper-card p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center" data-result-type="class12sci">
+<div class="relative mb-space-sm">
+<img alt="Rohan Deshmukh - 96.8% Class 12 Science" class="w-24 h-24 rounded-full object-cover ring-4 ring-secondary shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN3wmf4gN01xdlBoRjR0gGw6oLZKYg68Fm8LvklejUX4RWmkNp1PV0A3d2sQ-OX7vQSpBYl7wcpWb39uL_ZUbrYHKsGK-jAL6vDAY6LNkFTgBIant6qSNR9YCJcyUQOxCQZKns8NMzOWhNYdY14jU6zBDQswmlb4Qaq1fiIS5t5aUikMHUMYL2oztPKm28TS4n0UNUqF6aLcTuj7idp46OKgbZkkJfzIrru8oXbNglU0_bD6yfYEXSbg">
+<span class="absolute -bottom-2 right-0 bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-extrabold shadow-sm">AIR 42</span>
+</div>
+<p class="font-display-md text-display-md-mobile text-secondary font-extrabold">96.8%</p>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Rohan Deshmukh</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Class 12 Science (PCM)</p>
+<p class="font-body-sm text-body-sm text-secondary font-bold mt-1">99 in Chemistry, 98 in Math</p>
+<p class="font-label-sm text-label-sm text-outline mt-2">The Mother's International School</p>
+</div>
+<!-- Topper 3 -->
+<div class="topper-card p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center" data-result-type="class12comm">
+<div class="relative mb-space-sm">
+<img alt="Ananya Iyer - 95.6% Class 12 Commerce" class="w-24 h-24 rounded-full object-cover ring-4 ring-tertiary-fixed shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo8grlbqq-yvsoXGFTYEOOmsUb6L5C3XwU47WikhUvtPw1OWWJIPdMep5TdEiYIK0TM9vQNF1CZpjEtq7JizRDAvf9jy0NM6el85Z5iKhV5oN3i7o2Gnv-tCe-jwnjQWEWYJac7WJ2XEnMGPPSE_FADBbUUqOYPJyOzOs2iw2_I4zIc8B6zoN0aBkqbk0XnOmkzyrtUXdEpNYFtPQqWFDQw8q9EKaelRQNCkgyuQccVXJzrKQJII_PlQ">
+<span class="absolute -bottom-2 right-0 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-extrabold shadow-sm">Rank 1</span>
+</div>
+<p class="font-display-md text-display-md-mobile text-secondary font-extrabold">95.6%</p>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Ananya Iyer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Class 12 Commerce</p>
+<p class="font-body-sm text-body-sm text-secondary font-bold mt-1">100 in Accountancy</p>
+<p class="font-label-sm text-label-sm text-outline mt-2">Modern School, Barakhamba</p>
+</div>
+<!-- Topper 4 -->
+<div class="topper-card p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center" data-result-type="class10">
+<div class="relative mb-space-sm">
+<img alt="Kabir Mehta - 94.4% ICSE Class 10" class="w-24 h-24 rounded-full object-cover ring-4 ring-secondary shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbG6K1lbcNUv0l3ahx-bO5yQ2vBeFs7q5lJK9MwssRObKI-rgOn3H-TKQmj2-dccdpdjbaAXZCTt8_qUPvgjlxrywyJoR-m8MKuX2DpADSOJcacheEhKKJm6P4xrn6RXZpw2lWl_8cK-sFIyi53T3_sOjTVVQ-xuVsX8gFJbjcQhNW7BTzLXwe4_HBYn0GFzUgOZ3G40MKSutQbOIywJHVxs2iMqLe1SfpDRP413lGkm1BRkF_QHATug">
+<span class="absolute -bottom-2 right-0 bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-extrabold shadow-sm">ICSE Top 1%</span>
+</div>
+<p class="font-display-md text-display-md-mobile text-secondary font-extrabold">94.4%</p>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-1">Kabir Mehta</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Class 10 ICSE Board</p>
+<p class="font-body-sm text-body-sm text-secondary font-bold mt-1">Perfect 100 in Physics</p>
+<p class="font-label-sm text-label-sm text-outline mt-2">St. Xavier's Collegiate School</p>
+</div>
+</div>
+<div class="mt-space-lg text-center">
+<a class="inline-flex items-center gap-space-xs text-secondary font-label-lg text-label-lg font-bold hover:underline" href="#book-demo">
+<span class="">View All 150+ Verified Marksheets &amp; Parent Endorsements</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 8: FACULTY / EXPERT MENTORS -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Academic Leadership</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">Meet the Minds Behind SEZ</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Our mentors do not just lecture; they inspire, guide, and patiently clear every single obstacle between a student and their dream score.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Faculty 1 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img alt="Dr. Vikram Sen - Lead Mathematics Mentor" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKAPtDOrYeTyyiuNQDpBu4c--mnJXmDSCOVOVEF37PG4THs1yON0UMeaJvKLT6aZ6RiCsORiWeRPywb6nKguIzT6DNUL641njdhy5eNajbYdOduk0yGH9iP988yOKojLytUkVWMZHmnHMsPo33NaynnAyoEPD3sg9torjoJuxItvz5uZeTJKHGlr3g-jcSok0R7-fhBgEvW16n3wqcuOZ_YKKYzc29g-Qx0CjqLnCA_m8RdHXYQzBNfw">
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold w-max">Mathematics Head</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-2">Dr. Vikram Sen</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">M.Sc, Ph.D. in Pure Mathematics</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">14+ Years Experience • Ex-Allen Senior Faculty. Guided 35+ students into IITs.</p>
+</div>
+<!-- Faculty 2 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img alt="Prof. Sunita Raghavan - Chemistry &amp; Biology Faculty" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwKcJUW12_eLfOV2fl7hXebyPg84QfVfJWSemtqF50Yx1DxZ0IuvWvlGxWK4Xl3rmYR2kc9eTaYbKTmrv24YbCJB7QjJwnSQ3shVVFaE6CFnlcHUhAOJaaoIRBTua0RNfppr2r1j1jMPaYYPM33RFlVsjt_DT7SqWrvOO02xnc2X_kQBmd5qdvog8vnrZyM7ZwAi789_HvPpkhYEw9p5svLGRDPP_GV9lVTvf844vlXg1mlKyEah24Ew">
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold w-max">Chemistry &amp; Biology</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-2">Prof. Sunita Raghavan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">M.Sc Biochemistry, Gold Medalist</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">11+ Years Experience • Master of Organic Mechanisms and NCERT Biology retention.</p>
+</div>
+<!-- Faculty 3 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img alt="Er. Amitava Ghosh - Physics Specialist" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJO0sngc-kjT_VsAD3KePYcmTDA38Cy1Kb2gm3GPjsiuGCO9uwZSQNoDA7Qc6qWIUW-ca0SPeB-gS0weuh6fwrMt9vl_XjBt6T_Br3WUDfOi-Qa0fAZRITlwI0kXZ54wkDVrJ62W7IuEIiAAdKZvZ-0Qds_2khvLa8TzAwZjfgGQvHObaf458LClShFI2rLO9lcNONMUtaqIMYLUWHWuCrgOgw-rP5dhizret2QQD6_zrakW2VAF0nPw">
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold w-max">Physics Specialist</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-2">Er. Amitava Ghosh</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">B.Tech IIT Bombay (Mechanical)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">9+ Years Experience • Renowned for converting complex Electromagnetics into intuitive visuals.</p>
+</div>
+<!-- Faculty 4 -->
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="w-full h-56 rounded-xl overflow-hidden mb-space-md bg-surface-container">
+<img alt="CA Neha Agarwal - Commerce Mentor" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAey_wkm-YC_6zG46kl5eUFepXlK1jdIsTIz4fgJQpXsmgkmy92GYxTdkoyvd5OAgeSY24Zb3GymEZybRTAPd0YWP0fvJlWFhRppCsPwwujVeGF3VgSICai5JmPACx3XOMm4vTkvl22SjnX-NSYWvoQUfhQY99iZLB4l-8JdZUxmY1ynO9Tjhfe_gcoiQ9bJfkw7elWSz3Ct6DXfNRFz8x_UMq9jMa0nSc1E_x7FpErR6BjPCcmPfN-wQ">
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold w-max">Commerce &amp; Accounts</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold mt-2">CA Neha Agarwal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-medium">Chartered Accountant (Rank 28)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">8+ Years Experience • Specialist in 100/100 Accountancy answer presentation techniques.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 9: INSIDE OUR CLASSROOM (Interactive Experience Showcase) -->
+<section class="w-full bg-surface py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Inside VedaLumen</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">
+          A High-Focus, Well-Equipped Study Sanctuary
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Designed purposefully for ergonomic comfort, high-clarity audiovisual projection, and zero distractions.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="relative rounded-2xl overflow-hidden group shadow-sm h-64 bg-surface-container">
+<img alt="Interactive smartboards in tuition center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4mgEwoD9lfgEfQQrflRhC011ZRXBWA8npkIk09jyUIy8y8DEAn_mKCv04bOTUfkmOy9Q71LjS06HDVLbF9In6XF0666vYAbMuhZzit5c7SzpbFM1avPWSv_5jeRM1ymSYpiSvNQ4F_9VhGe8B6tii1n7uIFwD0c68UrQ0r4BjjoB1jtQtKdTPB1sQhoRPAtU2qwZBmJp1AJ2W67KeQQe6Paqy1X98KdE-WJsPDuZ-duQYbovgFdnEdg">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold uppercase">Modern Infrastructure</span>
+<p class="font-headline-sm text-headline-sm text-on-primary font-bold">Interactive Smartboards &amp; Visual Simulations</p>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden group shadow-sm h-64 bg-surface-container">
+<img alt="1 on 1 doubt solving desk" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoRyCnsGLrcWlnDHxScV2We4qOD9hndSIvB6zo9LprT6aEUbJknTrutopPI5VBFcpbXJ3G1zC5FmLj5cVje4n1HGx7eNqsrAmURCoKJFBlcLs-JIqgCbc0cZGHH6kgLYh4iO4dcBKxC9B3AoPN22HKj0GEtTy2efnXjOzAnujxuETrDS42jHqtWpHRPk4mm4A8m_UblJs1UfHdM3HwpK8KQRqPh5ubD13pMkR6RJ63s8mKx97Db6ZMqA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold uppercase">Personal Guidance</span>
+<p class="font-headline-sm text-headline-sm text-on-primary font-bold">Dedicated 1-on-1 Doubt Clearing Counters</p>
+</div>
+</div>
+<div class="relative rounded-2xl overflow-hidden group shadow-sm h-64 bg-surface-container">
+<img alt="Weekly Board Simulation Test series room" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcyLiRpetlb2v1eA3-JCPY4FKFYfWzHXwBhCzkRJFmQtgN2AWjS89WVpZk_kppINcBqMC-wDTJI7zLIF9gOHJQ7eFXST7qiLc2dHwPjmGiXqDjW4hiCdzHbQ84z28BSkLVKM_b-oByNOHmHsl6tRUvjQFjhbWJ1g9qntn44mWApIZP1U4sePmGsvJGzKfg1cW2-NmY2qdkkKsX6qUFpYIoLDeXIipswmAHX-P2BeJ1mJlQBoR66Oz2xQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-tertiary-fixed font-bold uppercase">Exam Simulation</span>
+<p class="font-headline-sm text-headline-sm text-on-primary font-bold">Board Mock Exam Hall with Strict Invigilation</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 10: PARENT & STUDENT TESTIMONIALS -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center max-w-3xl mx-auto mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Real Stories of Transformation</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">
+          Endorsed by Discerning Parents &amp; Confident Students
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Read genuine feedback from families whose academic stress transformed into triumph.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Review 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-space-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              “VedaLumen transformed my daughter’s fear of Physics and Math into her highest scoring subjects in Class 10 (97%). The weekly updates and test analytics gave our family complete peace of mind.”
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md border-t border-surface-container">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary font-bold">RM</div>
+<div>
+<p class="font-headline-sm text-body-lg font-bold text-primary leading-tight">Mrs. Radhika Mehra</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mother of Tanvi • DPS R.K. Puram</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-space-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              “The small batch size of 12 students made a massive difference. Teachers knew exactly where I was making silly calculation mistakes in calculus and worked with me until I perfected it. Scored 96% in Class 12 Science!”
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md border-t border-surface-container">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary font-bold">AN</div>
+<div>
+<p class="font-headline-sm text-body-lg font-bold text-primary leading-tight">Arjun Nair</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Student • Scored 96% in 12th Board</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-tertiary-fixed-dim mb-space-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic">
+              “Honest academic mentorship with zero hollow marketing claims. The daily doubt clearing sessions after school hours prevented my son from falling behind in organic chemistry.”
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md border-t border-surface-container">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-secondary font-bold">RV</div>
+<div>
+<p class="font-headline-sm text-body-lg font-bold text-primary leading-tight">Col. Rajesh Verma</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Parent of Rohan • Class 11</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 11: HIGH-IMPACT ADMISSIONS CALL TO ACTION -->
+<section class="w-full bg-primary-container text-on-primary py-space-xl relative overflow-hidden">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-gutter-mobile lg:px-gutter text-center relative z-10">
+<span class="inline-block px-3.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase mb-space-sm">
+        Limited Seats for 2026–27 Academic Cycle
+      </span>
+<h2 class="font-display-md text-display-md-mobile sm:text-display-md font-bold text-on-primary tracking-tight">
+        Your Child’s Better Learning Journey Starts Today
+      </h2>
+<p class="font-body-xl text-body-xl text-on-primary-container max-w-2xl mx-auto mt-space-sm">Experience our concept-focused methodology firsthand at Sahjanand Educational Zone. Attend 2 complimentary interactive demo classes with our senior mentors before making any commitment.</p>
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-lg">
+<a class="px-space-xl py-4 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm font-bold shadow-lg hover:bg-tertiary-fixed-dim transition-all" href="#book-demo">
+          Book Free 2-Day Demo Class
+        </a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-4 rounded-lg bg-surface-container-lowest/10 text-on-primary hover:bg-surface-container-lowest/20 transition-colors font-headline-sm text-headline-sm font-bold" href="tel:+919820145678">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim">call</span>
+<span class="">Talk with Counsellor</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-lg text-on-primary-container text-body-sm font-body-sm mt-space-lg">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span> Zero Upfront Commitment</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span> Free Diagnostic Skill Test</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span> Comprehensive Subject Booklet</span>
+</div>
+</div>
+</section>
+<!-- SECTION 12: FREQUENTLY ASKED QUESTIONS -->
+<section class="w-full bg-surface py-space-xl lg:py-24" id="faqs">
+<div class="max-w-4xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="flex flex-col items-center text-center mb-space-xl">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Got Questions?</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight mt-2">
+          Frequently Asked Questions
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">
+          Everything parents and students need to know regarding admissions, batch sizes, and methodology.
+        </p>
+</div>
+<div class="space-y-space-sm" id="faq-accordion-group">
+<!-- Item 1 -->
+<div class="faq-item rounded-xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-sm text-primary font-headline-sm text-headline-sm font-semibold" type="button">
+<span class="">Which classes and school boards do you provide coaching for?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant hidden">
+            We provide structured academic coaching for Class 1 through Class 12 across CBSE, ICSE, and State Boards. For Classes 11 and 12, we offer specialized faculty cohorts in Science (PCM &amp; PCB), Commerce, and Humanities.
+          </div>
+</div>
+<!-- Item 2 -->
+<div class="faq-item rounded-xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-sm text-primary font-headline-sm text-headline-sm font-semibold" type="button">
+<span class="">What is the maximum student capacity per batch?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant hidden">
+            We adhere to a strict policy: a maximum of 12 to 15 students per batch. This allows our mentors to address individual learning difficulties and ensure every student actively participates during discussions.
+          </div>
+</div>
+<!-- Item 3 -->
+<div class="faq-item rounded-xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-sm text-primary font-headline-sm text-headline-sm font-semibold" type="button">
+<span class="">How are doubts addressed for introverted or shy students?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant hidden">
+            In addition to classroom time, we host daily 1-on-1 Doubt Windows from 6:30 PM to 8:00 PM. Shy students can book individual 15-minute slots with their mentors to ask questions in private.
+          </div>
+</div>
+<!-- Item 4 -->
+<div class="faq-item rounded-xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-sm text-primary font-headline-sm text-headline-sm font-semibold" type="button">
+<span class="">Can my child experience a trial class before formal enrollment?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant hidden">
+            Yes, absolutely. We encourage every new student to attend 2 complimentary demo sessions in their respective stream. There are zero upfront fees or long-term lock-in obligations.
+          </div>
+</div>
+<!-- Item 5 -->
+<div class="faq-item rounded-xl bg-surface-container-low overflow-hidden transition-all">
+<button class="faq-btn w-full p-space-md text-left flex items-center justify-between gap-space-sm text-primary font-headline-sm text-headline-sm font-semibold" type="button">
+<span class="">What are the available morning and evening batch timings?</span>
+<span class="material-symbols-outlined faq-icon text-secondary transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content px-space-md pb-space-md font-body-md text-body-md text-on-surface-variant hidden">
+            We run convenient morning batches (6:30 AM – 8:00 AM) and evening batches (4:00 PM – 8:30 PM), as well as dedicated weekend revision batches to easily fit around regular school schedules.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 13: CONTACT & INTERACTIVE DEMO BOOKING FORM -->
+<section class="w-full bg-surface-container-low py-space-xl lg:py-24" id="book-demo">
+<div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Contact Info -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary font-bold">Contact Our Admissions Desk</span>
+<h2 class="font-headline-xl text-headline-xl-mobile sm:text-headline-xl text-primary font-bold tracking-tight">
+            Let’s Talk About Your Child’s Goals
+          </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Have questions regarding batch timings, scholarship criteria, or faculty credentials? Drop by our learning center or schedule a quick phone consultation.
+          </p>
+<div class="space-y-space-md pt-space-xs">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div>
+<p class="font-headline-sm text-body-lg text-primary font-bold">SEZ Main Campus</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Central Academic Plaza, Sector 18, Educational District</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div>
+<p class="font-headline-sm text-body-lg text-primary font-bold">Admissions Hotline</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">+91 98201 45678 / +91 98201 45679</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<p class="font-headline-sm text-body-lg text-primary font-bold">Visiting &amp; Counsellor Hours</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Monday to Saturday: 8:00 AM – 8:30 PM (Sunday by Appointment)</p>
+</div>
+</div>
+</div>
+<!-- Location Map Preview Card -->
+<div class="w-full h-48 rounded-xl bg-cover bg-center mt-space-sm shadow-sm" data-location="Sector 18, Noida, Uttar Pradesh, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB4NdAMKItPr2DjCDiRt-ZMiaTNoi0lcPG8WoeOPI2-6ju5SI--H2jHNkEWGqNVAIxwqWoBWczNzAYrcp8KH7ee6-alwQEYrGnlD3jRcf-_4nk0gGMJWuDqAemNPwK6xG-xd4FoPdExVg4GBm-cd2G5aj-bnUxMrbWECs-iWbnEEMXCTQyqUs8TK5tZyi0i9D2bDjDoaYs3HlweDsQ7zVQJ5U-C2wMlGoSVqmASV8YoA7eg37qHi3_c3g')"></div>
+</div>
+<!-- Right: Interactive Lead Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg sm:p-space-xl rounded-2xl shadow-md">
+<div class="mb-space-md"><div class="flex items-center gap-space-xs mb-2"><img alt="SEZ Emblem" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA07bc9ZeH6EwyaN0tg2EGpLoNVQkP_FfLAPO9OwbP9NT7h058tgafJ8UgwmiMUcZH_S7A3COKfjAv74J1tkhlh7yXD5JV76-RXoY0Ewww0wTNx2fNbZYB_ygSPKwh9Vfxdh5Rd25HIw02idS9Hkw_0CyfYP52UxVS4iuT_IfwQBngcjk0atKAYbV6ugX7tL3ezZCF75D_4ifCqk2Gc1C1ogL84oPhCABhdtNYhTQEopNGkZPemnErCL6IMFPEoKY4f2KE"><span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-bold">Sahjanand Educational Zone</span></div><h3 class="font-headline-lg text-headline-lg text-primary font-bold">Book a Free 2-Day Demo Class</h3><p class="font-body-md text-body-md text-on-surface-variant mt-1">Select your child's grade and preferred timings. We will confirm your seat within 2 hours.</p></div>
+<form class="space-y-space-md" id="demo-inquiry-form">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="student_name">Student Full Name *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="student_name" placeholder="e.g. Tanmay Sen" required="" type="text">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="parent_name">Parent / Guardian Name *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="parent_name" placeholder="e.g. Alok Sen" required="" type="text">
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="phone_number">Phone Number (WhatsApp) *</label>
+<input class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="phone_number" placeholder="+91 98765 43210" required="" type="tel">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="student_class">Class / Grade *</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="student_class" required="">
+<option value="">Select Grade</option>
+<option value="1-5">Class 1 to 5 (Foundation)</option>
+<option value="6-8">Class 6 to 8 (Middle School)</option>
+<option value="9">Class 9 (Secondary)</option>
+<option value="10">Class 10 (Board Prep)</option>
+<option value="11-sci">Class 11 Science (PCM/PCB)</option>
+<option value="12-sci">Class 12 Science (PCM/PCB)</option>
+<option value="11-comm">Class 11 Commerce</option>
+<option value="12-comm">Class 12 Commerce</option>
+<option value="humanities">Class 11/12 Humanities</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="board_name">School Board</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="board_name">
+<option value="cbse">CBSE</option>
+<option value="icse">ICSE / ISC</option>
+<option value="state">State Board</option>
+<option value="ib-igcse">IB / Cambridge</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="batch_timing">Preferred Slot</label>
+<select class="w-full h-12 px-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="batch_timing">
+<option value="evening">Evening (4:30 PM – 7:30 PM)</option>
+<option value="morning">Morning (6:30 AM – 8:00 AM)</option>
+<option value="weekend">Weekend Intensive (Sat &amp; Sun)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1.5" for="notes">Any Specific Subject Requirements? (Optional)</label>
+<textarea class="w-full p-4 rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:outline-none text-body-md font-body-md text-on-surface transition-colors" id="notes" placeholder="e.g. Need special focus on Math formulas &amp; Physics numericals" rows="2"></textarea>
+</div>
+<button class="w-full py-4 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm font-bold shadow-md hover:bg-tertiary-fixed-dim transition-all flex items-center justify-center gap-space-xs" type="submit">
+<span class="">Confirm &amp; Reserve Free Demo Seat</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<p class="font-body-sm text-body-sm text-center text-on-surface-variant">We value your privacy. No promotional spam, only genuine academic advice.</p>
+</form>
+<!-- Friendly Success Alert -->
+<div class="hidden p-space-md rounded-xl bg-surface-container text-on-surface mt-space-md" id="form-success">
+<div class="flex items-center gap-space-xs text-secondary font-bold">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+<span class="font-headline-sm text-headline-sm">Demo Seat Request Received!</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              Our academic counsellor will call you on the provided number shortly to finalize the demo date and share the syllabus material.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 1. Course Filtering Tabs
+      const courseButtons = document.querySelectorAll('.course-filter-btn');
+      const courseCards = document.querySelectorAll('.course-card');
+
+      courseButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          courseButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-highest', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+
+          const filter = btn.getAttribute('data-filter');
+          courseCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 2. Results Filtering Tabs
+      const resultButtons = document.querySelectorAll('.result-filter-btn');
+      const topperCards = document.querySelectorAll('.topper-card');
+
+      resultButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          resultButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary');
+            b.classList.add('bg-surface-container-highest', 'text-on-surface');
+          });
+          btn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary');
+
+          const filter = btn.getAttribute('data-result-filter');
+          topperCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-result-type') === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Accessible FAQ Accordions
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(item => {
+        const btn = item.querySelector('.faq-btn');
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+
+        btn.addEventListener('click', () => {
+          const isOpen = !content.classList.contains('hidden');
+          // Close others
+          faqItems.forEach(other => {
+            other.querySelector('.faq-content').classList.add('hidden');
+            other.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          });
+
+          if (!isOpen) {
+            content.classList.remove('hidden');
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+
+      // 4. Booking Form Simulation
+      const demoForm = document.getElementById('demo-inquiry-form');
+      const formSuccess = document.getElementById('form-success');
+      if (demoForm) {
+        demoForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          demoForm.classList.add('opacity-50', 'pointer-events-none');
+          setTimeout(() => {
+            demoForm.classList.add('hidden');
+            formSuccess.classList.remove('hidden');
+          }, 600);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-primary-container text-inverse-on-surface pt-space-xl pb-24 lg:pb-space-xl"><div class="max-w-7xl mx-auto px-gutter-mobile lg:px-gutter"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Sahjanand Educational Zone" class="h-10 w-auto object-contain bg-white p-1 rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1vu8AW6O_MSkLHzTCKz9WXcUkSgZsjIPJiuUkwd_MzyR4atFb3ikdiRUTltqZcnvV--nJB350d8x1Cffhet-JzLYZn-SqKVoxcOfk9bKGNLwPHilIzdm1kgUvy20fUDyeAjgLUSOM4s1OzkrYHwJVPlu4DEO3UFoHcO9jd-Li3dUWVlhRVMhQYIySjICPP-RJefx0r-Vkug-eqFuWpgZ2xTqndE8bUlfJmIlD4TYBK6YOO43REgJ0d4BNmL4wKTek_HI"></div><p class="font-body-md text-body-md text-on-primary-container max-w-sm"><span class="text-tertiary-fixed-dim font-semibold">We Create Future ®</span> — Guiding young minds toward conceptual mastery &amp; academic excellence since 2016. High-impact pedagogy built for board ranks &amp; competitive exams.</p><div class="flex items-center gap-space-sm pt-space-xs"><a class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">language</span></a><a class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">play_circle</span></a><a class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">school</span></a></div></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Academic Streams</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-primary-container"><li class=""><a class="hover:text-on-primary transition-colors" href="#">Foundation (Class 1–8)</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">High School (Class 9–10)</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Science (PCM &amp; PCB 11–12)</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Commerce &amp; Applied Math</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Humanities &amp; Arts 11–12</a></li></ul></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Parent Resources</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-primary-container"><li class=""><a class="hover:text-on-primary transition-colors" href="#">Book a Demo Class</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Assessment Schedule</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Transparent Fee Structure</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Talent Scholarship Exam</a></li><li class=""><a class="hover:text-on-primary transition-colors" href="#">Student Portal &amp; Marks</a></li></ul></div><div class="flex flex-col gap-space-md"><h4 class="font-headline-sm text-headline-sm text-on-primary font-bold">Academy Campus</h4><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-primary-container"><p class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim shrink-0">location_on</span>Central Academic Plaza, Sector 18, Educational District</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim shrink-0">call</span>+91 98201 45678</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim shrink-0">mail</span>admissions@vedalumen.edu</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim shrink-0">schedule</span>Mon–Sat: 8:00 AM – 8:30 PM</p></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-primary-container"><p class="">© 2026 Sahjanand Educational Zone. All Rights Reserved. We Create Future ®</p><div class="flex items-center gap-space-md"><a class="hover:text-on-primary transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-primary transition-colors" href="#">Terms of Enrollment</a><a class="hover:text-on-primary transition-colors" href="#">Sitemap</a></div></div></div></footer><div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md p-space-sm shadow-[0_-2px_12px_rgba(0,0,0,0.08)] flex items-center justify-around gap-space-sm"><a class="flex-1 flex items-center justify-center gap-space-xs py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" href="tel:+919820145678"><span class="material-symbols-outlined text-[18px] text-secondary">call</span>Call Now</a><a class="flex-1 flex items-center justify-center gap-space-xs py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" href="https://wa.me/919820145678"><span class="material-symbols-outlined text-[18px] text-secondary">chat</span>WhatsApp</a><a class="flex-1 flex items-center justify-center gap-space-xs py-2.5 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold" data-path="book-free-demo" href="#">Book Demo</a></div>
+
+</body></html>
